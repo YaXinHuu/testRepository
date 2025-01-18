@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Noto Sans JP', 'Josefin Sans', inherit, sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    /* background: url(./images/bg.png) ; */
+    /* background-attachment: fixed; */
+    /* background-size: cover ; */
+    background-color: #ffffff;
+}
+/* 共用 */
+.setCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.setStart{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.upper{
+    width: 100vw;
+    height: 55px;
+    background-color: #E6E6E6;
+    position: relative;
+}
+.upperSec01{
+    position:absolute;
+    top: 15px;
+    left: 30px;
+    cursor: pointer;
+}
+.upperSec02{
+    position:absolute;
+    top: 15px;
+    left: 250px;
+    cursor: pointer;
+}
+.upperSec03{
+    position:absolute;
+    top: 15px;
+    left: 350px;
+    cursor: pointer;
+}
+.upperSec04{
+    position:absolute;
+    top: 15px;
+    left: 450px;
+    cursor: pointer;
+}
+.bg{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+}
+.navbar{
+    width: 200px;
+    background-color: #1A1A1A;
+    height: calc(100vh - 55px);
+}
+.main{
+    width: calc(100vw - 200px);
+    height: calc(100vh - 55px);
+    background-color: #fff;
+}
+.navbar>div{
+    width: 100%;
+    height: 40px;
+    background-color: #1A1A1A;
+    color: #fff;
+}
+.navbar img{
+    width: 16px;
+    transform: rotate(-90deg);
+}
+.navSec01{
+    cursor: pointer;
+    background-color: #2C3039 !important;
+}
+.navSec01 img{
+    transform: rotate(0deg) !important;
+    width: 24px;
+}
+.navSec02{
+    cursor: pointer;
+}
+.navSec03{
+    cursor: pointer;
+}
+.navSec04{
+    cursor: pointer;
+}
+.navSec05{
+    cursor: pointer;
+}
+.navSec06{
+    cursor: pointer;
+}
+.navSec02 span{
+    margin-right: 10px;
+}
+.navSec03 span{
+    margin-right: 10px;
+}
+.navSec04 span{
+    margin-right: 10px;
+}
+.navSec05 span{
+    margin-right: 10px;
+}
+.navSec06 span{
+    margin-right: 10px;
+}
+/* 我的服務訂單 */
+.userServiceOrderBox{
+    width: calc(100% - 24px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 12px auto;
+}
+.userServiceOrderTitle{
+    width: 100%;
+    background-color: #0064B1;
+    display: flex;
+}
+.userServiceOrderTitle div{
+    width: 11%;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+.userServiceOrderTitle div:first-child {
+    flex-grow: 1;
+    width: auto;
+}
+.userServiceOrderMainBox{
+    margin-top: 12px;
+    width: 100%;
+}
+.userServiceOrderMain{
+
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+}
+.userServiceOrderMain div{
+    width: 11%;
+    border: 1px solid #000000;
+    color: #000000;
+    padding: 6px;
+}
+.userServiceOrderMain div:first-child {
+    flex-grow: 1;
+    width: auto;
+}
+.buttonStyle01{
+    width: 200px;
+    height: 45px;
+    border-radius: 20px;
+    background-color: #A5A5A5;
+    border: none;
+    margin: 12px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+.buttonStyle01:hover{
+    background-color: #FB443F;
+}
+.buttonStyle01:active{
+    background-color: #FB443F;
+}
+.buttonStyle02{
+    width: 120px;
+    border-radius: 8px;
+    border: none;
+    background-color: #dadee7;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #504b4b;
+    height: 30px;
+    cursor: pointer;
+}
+#myAccount{
+    position: absolute;
+    right: 12px;
+    top: 12px;
+}
+#logout{
+    position: absolute;
+    right: 12px;
+    top: 46px;
+}
+#myAccount:hover{
+    background-color: #0064B1;
+    color: #fff;
+}
+#logout:hover{
+    background-color: #0064B1;
+    color: #fff;
+}
