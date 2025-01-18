@@ -52,7 +52,7 @@ async function getUserServiceOrderMain() {
     const userServiceOrderBox = document.getElementById('userServiceOrderBox');
     userServiceOrderBox.style.display='block';
     try {
-        const response = await fetch('public/data/test.json');
+        const response = await fetch('./data/test.json');
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
