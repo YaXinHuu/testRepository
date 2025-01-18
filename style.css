@@ -140,9 +140,10 @@ body {
 .userServiceOrderMainBox{
     margin-top: 12px;
     width: 100%;
+    overflow-y: scroll;
+    height: calc(100vh - 140px);
 }
 .userServiceOrderMain{
-
     width: 100%;
     background-color: #ffffff;
     display: flex;
